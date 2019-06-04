@@ -1,12 +1,4 @@
 @if "%DEBUG%" == "" @echo off
-
-REM Excerpted from "Java By Comparison",
-REM published by The Pragmatic Bookshelf.
-REM Copyrights apply to this code. It may not be used to create training material,
-REM courses, books, articles, and the like. Contact us if you are in doubt.
-REM We make no guarantees that this code is fit for any purpose.
-REM Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
-
 @rem ##########################################################################
 @rem
 @rem  Gradle startup script for Windows
@@ -57,7 +49,6 @@ goto fail
 @rem Get command-line arguments, handling Windows variants
 
 if not "%OS%" == "Windows_NT" goto win9xME_args
-if "%@eval[2+2]" == "4" goto 4NT_args
 
 :win9xME_args
 @rem Slurp the command line arguments.
@@ -68,11 +59,6 @@ set _SKIP=2
 if "x%~1" == "x" goto execute
 
 set CMD_LINE_ARGS=%*
-goto execute
-
-:4NT_args
-@rem Get arguments from the 4NT Shell from JP Software
-set CMD_LINE_ARGS=%$
 
 :execute
 @rem Setup the command line
